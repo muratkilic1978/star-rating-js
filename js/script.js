@@ -14,6 +14,13 @@ for(let x = 0; x < stars.length; x++){
 function starRate(e){
     let eventValue = e.type;
     let starValue = this.starValue;
+    if(eventValue === "click"){
+        if(starValue > 0){
+            output.innerHTML = "You rated this "+starValue+ " stars.";
+        }
+    }
+    
+    
     stars.forEach(function(ele,ind){
         if(eventValue === "click"){
             if(ind < starValue) {
