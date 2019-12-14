@@ -1,0 +1,25 @@
+.stars {
+    list-style:none;
+    padding: 1.2rem;
+}
+
+.star {
+    font-size: 1.3rem;
+    color: #ddd;
+    display: inline-block;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.orange {
+    color: orange;
+}
+
+.output {
+    margin: 50px 0;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #ddd;
+}
