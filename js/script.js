@@ -24,9 +24,9 @@ function starRate(e){
     stars.forEach(function(ele,ind){
         if(eventValue === "click"){
             if(ind < starValue) {
-                ele.classList.add("gold");
+                ele.classList.add("violetred");
             }else{
-                ele.classList.remove("gold");
+                ele.classList.remove("violetred");
             }
         }
         
