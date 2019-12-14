@@ -12,6 +12,16 @@ for(let x = 0; x < stars.length; x++){
 
 
 function starRate(e){
-    console.log(this.starValue);
-    console.log(e.type);
+    let eventValue = e.type;
+    let starValue = this.starValue;
+    stars.forEach(function(ele,ind){
+        if(eventValue === "click"){
+            if(ind < starValue) {
+                ele.classList.add("gold");
+            }else{
+                ele.classList.remove("gold");
+            }
+        }
+        
+    })
 }
